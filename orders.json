@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1770389563877",
+    "table": "655",
+    "items": [
+      {
+        "name": "Espresso",
+        "price": 95,
+        "qty": 1
+      }
+    ],
+    "note": "",
+    "total": 95,
+    "status": "Pending",
+    "createdAt": "2026-02-06T14:52:43.877Z"
+  }
+]

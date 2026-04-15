@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kahundanda POS - Admin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🛠️ Kahundanda Resort Tappu — Admin</h1>
+
+    <div class="card">
+      <h2>Admin Login (PIN)</h2>
+      <label>Admin PIN</label>
+      <input id="adminPin" type="password" placeholder="Enter admin PIN" />
+      <button id="adminLoginBtn">Login</button>
+      <div id="msg" class="muted"></div>
+
+      <div style="height:12px"></div>
+      <a class="adminLink" href="/staff.html">← Back to Staff</a>
+    </div>
+
+    <div id="panel" class="card" style="display:none; margin-top:14px;">
+      <div class="rowBetween">
+        <div>
+          <h2 style="margin:0;">QR Order Version One</h2>
+          <div class="muted">Auto refresh: 3 seconds</div>
+        </div>
+        <button id="printTodayBtn" class="secondary small fitBtn">🖨️ Print Today Sales (A4)</button>
+      </div>
+
+      <div class="gridTwo" style="margin-top:14px;">
+        <div class="sectionBox">
+          <h3>Ongoing Bills</h3>
+          <div id="ongoingList" class="orderList"></div>
+        </div>
+
+        <div class="sectionBox">
+          <h3>Checkout Bills</h3>
+          <div id="checkoutList" class="orderList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

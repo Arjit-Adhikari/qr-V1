@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kahundanda POS - Staff</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍽️ Kahundanda Resort Tappu — Staff POS</h1>
+
+    <div id="loginCard" class="card">
+      <h2>Staff Login</h2>
+
+      <label>Staff PIN</label>
+      <input id="staffPin" type="password" placeholder="Enter PIN" />
+
+      <button id="staffLoginBtn">Login</button>
+
+      <div id="loginMsg" class="muted"></div>
+
+      <div style="margin-top:12px;">
+        <a class="adminLink" href="/admin.html">Go to Admin</a>
+      </div>
+    </div>
+
+    <div id="staffCard" class="card" style="display:none;">
+      <div class="rowBetween">
+        <h2 style="margin:0;">QR Order Version One</h2>
+        <button id="logoutBtn" class="secondary small">Logout</button>
+      </div>
+
+      <div class="sectionBox">
+        <h3>Add Table</h3>
+        <div class="inlineRow">
+          <input id="tableInput" placeholder="e.g. T1 / Cottage 2 / Pool Side" />
+          <button id="addTableBtn" class="fitBtn">Add Table</button>
+        </div>
+        <div id="tableMsg" class="muted"></div>
+      </div>
+
+      <div class="sectionBox">
+        <h3>Tables</h3>
+        <div id="tableList" class="tableList"></div>
+      </div>
+
+      <div class="sectionBox">
+        <div class="rowBetween">
+          <div>
+            <h3 style="margin:0;">Active Table</h3>
+            <div id="activeTableText" class="muted">No table selected</div>
+          </div>
+          <button id="checkoutBtn" class="fitBtn">Checkout Bill</button>
+        </div>
+      </div>
+
+      <div class="sectionBox">
+        <h3>Menu</h3>
+        <div id="menuArea"></div>
+      </div>
+
+      <div class="sectionBox">
+        <h3>Bill Items</h3>
+        <div id="selectedArea"></div>
+        <div class="muted">Total: <b id="totalText">NPR 0</b></div>
+      </div>
+
+      <div id="msg" class="muted"></div>
+
+      <div class="gridTwo">
+        <div class="sectionBox">
+          <h3>Ongoing Bills</h3>
+          <div id="ongoingList"></div>
+        </div>
+
+        <div class="sectionBox">
+          <h3>Checkout Bills</h3>
+          <div id="checkoutList"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="staff.js"></script>
+</body>
+</html>
